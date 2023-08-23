@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+          <div class="front">
+            <img  src="4780372.jpg" alt="">
+          </div>
+          <div class="back">
+            <img src="Places-To-Visit-In-India.jpg" alt="">
+          </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="registration-form">
+                    <div class="title">User Registration</div>
+                        <form action="register_process.php" method=POST>
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <input type="text" name="name" placeholder="Enter your name"  required><br>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" name="username" placeholder="Enter your username" required><br>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Enter your password" required><br>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Enter your email" required><br>
+                                </div>
+                                <div class="input-box">
+                                    <input type="number" name="mobile" placeholder="Enter your mobile no." required><br>
+                                </div>
+                               
+                                
+                                <div class="button input-box">
+                                    <input type="submit" value="Register">
+                                </div>
+                                <div class="text login-text">Already have account?<label for="flip">Login now</label></div>
+                                
+                            </div>
+                        </form>
+                </div>
+                <div class="login-form">
+                    <div class="title">User Login</div>
+                        <form action="login_process.php" method="post">
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <input type="text" name="username" placeholder="Enter your username" required><br>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Enter your password" required><br>
+                                </div>
+                                <div class="text"><a href="#">Forgot password?</a></div>
+                                <div class="button input-box">
+                                        <input type="submit" value="Login">
+                                </div>
+                                <div class="text sign-up-text">Don't have an account? <label for="flip">Register now</label></div>
+                            </div>  
+                        </form>
+                </div>
+                
+            </div>
+        </div>
+</div>
+</body>
+</html>
